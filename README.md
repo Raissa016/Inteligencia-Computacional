@@ -16,12 +16,12 @@ Na implementação em questão fora considerado duas principais variáveis, entr
 velocidade do vento (m/s), e saída y: potência gerada (kWatts). Os dados analisados podem ser
 vistos na Figura abaixo:
 
-
+![](DadosAerogerador.png)
 
 O problema fora formulado como: y = Xβ + ε, o que equivale ao seguinte sistema
 com n equações e k + 1 incógnitas:
 
-![t2](https://user-images.githubusercontent.com/44507419/91242824-c813d700-e71e-11ea-87b5-519297d5f5a2.png)
+![eq](https://user-images.githubusercontent.com/44507419/91243387-4b81f800-e720-11ea-9d1e-180f4666b636.png)
 
 
 Usando o método dos mínimos quadrados para estimar os coeficientes de regressão
@@ -32,6 +32,11 @@ O código criado em MATLAB realiza todo esse processo com estimativa dos coefici
 de regressão polinomial pelo método dos mínimos quadrados para os graus 2, 3, 4 e 5. As
 Figuras abaixo mostram o comportamento da regressão em relação aos graus polinomiais 2 e 5,
 respectivamente.
+
+![](RegressaoMultiplaGrau2.png)
+
+![](RegressaoMultiplaGrau5.png)
+
 
 Além dos gráficos gerados ao fim da implementação, na janela de comandos do
 MATLAB é fornecido uma tabela com os resultados das métricas de avaliação: Coeficiente de
